@@ -1,0 +1,463 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 0 auto;
+    /* background-color: #222; */
+}
+#particles-js{
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url('3d-medical-background-with-dna-strands-plexus-design.jpg');
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: white;
+}
+.gene_search{
+    background-image: url(./dna-closely.jpg);
+    background-size: cover;
+    padding: 18% 12.5% 12.5%;
+}
+.gene_search form{
+    width: 60%;
+    background: linear-gradient(114.83deg, rgba(241, 241, 234, 0.5)0.8%, rgba(241, 176, 54, 0) 101.31%);
+/* filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15)); */
+backdrop-filter: blur(20px);
+padding: 5%;
+border-radius: 30px;
+    
+}
+.gene_search form h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: rgb(253, 250, 250);
+}
+.gene_search form input[type="text"]{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.gene_search form input[type="submit"]{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background: gray;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gene_search form input[type="submit"]:hover{
+    background: whitesmoke;
+    color: gray;
+}
+.protein_search{
+    background-image: url(./pbg.jpg);
+    background-size: cover;
+    padding: 18% 12.5% 12.5%;
+}
+.protein_search form{
+    width: 60%;
+    background: linear-gradient(114.83deg, rgba(215, 198, 67, 0.5)0.8%, rgba(241, 176, 54, 0) 101.31%);
+/* filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15)); */
+backdrop-filter: blur(20px);
+padding: 5%;
+border-radius: 30px;
+    
+}
+.protein_search form h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+.protein_search form input[type="text"]{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.protein_search form input[type="submit"]{
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.protein_search form input[type="submit"]:hover{
+    background: whitesmoke;
+    color: orange;
+}
+#about{
+    background-image: url(./3d-medical-background-with-virus-cells-dna-strand.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11% 10% 10% 10%;
+}
+#about .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background: rgb(205, 159, 200);
+    padding: 3% 5%;
+    width: 900px;
+    height: 500px;
+    border-radius: 30px;
+}
+#about .content h2{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about .content p{
+    font-size: 18px;
+    color: black;
+    line-height: 2;
+}
+.nav{
+    background: rgb(65, 161, 235);
+    width: 100%;
+    padding:20px 30px ;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.85;
+}
+.nav ul{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav ul li{
+    margin-left: 50px;
+    margin-right: 20px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.main {
+    padding: 9% ;
+    padding-bottom: 6%;
+    font-size: 20px;
+    background-image: url(./3d-abstract-space-background-with-wireframe-landscape.jpg);
+    background-size: cover;
+}
+
+.main form{
+    width: 60%;
+    background: linear-gradient(114.83deg, rgba(106, 85, 203, 0.5)0.8%, rgba(143, 53, 137, 0.351) 101.31%);
+/* filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15)); */
+backdrop-filter: blur(20px);
+padding: 5%;
+border-radius: 30px;
+    
+}
+
+.container {
+    background: teal;
+    color: black;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Poppins", sans-serif;;
+}
+
+.heading {
+    font-size: 18px;
+    text-align: center;
+}
+
+.para {
+    font-weight: 600;
+    text-align: center;
+}
+
+.feedback-level {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.level {
+    background: #1f4690;
+    padding: 13px;
+    border-radius: 7px;
+    border: solid 0.5px #1f4690;
+    cursor: pointer;
+}
+.level:hover {
+    box-shadow: #1363df 0 2px 5px;
+}
+.level:hover i {
+    color: #1363df;
+}
+.level i {
+    font-size: 40px;
+}
+
+.feedback-msg textarea {
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    color: #112d4e;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    background-color: #dbe2ef;
+}
+
+.agreement .checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.agreement input {
+    accent-color: #dbe2ef;
+}
+.agreement a {
+    color: #dbe2ef;
+    font-size: 12px;
+    font-weight: 600;
+}
+.agreement label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.buttons a {
+    background: #dbe2ef;
+    color: #3f72af;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.buttons a:hover {
+    opacity: 0.9;
+}
+.buttons a:nth-child(1) {
+    background: #3f72af;
+    color: #dbe2ef;
+}
+
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color: rgb(82, 151, 255);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+.contentchat {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px ;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {
+    opacity: .7;
+}
+
+
+#userInput {
+    width: 75%;
+}
+
+.input-box {
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: wheat;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}
